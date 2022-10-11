@@ -77,7 +77,5 @@ public class PetriNetTest {
         Assert.check(transitions.size() == 1);
         Assert.check(transitions.get(0) == t2);
 
-        System.out.println(petriNet);
-
     }
 }
