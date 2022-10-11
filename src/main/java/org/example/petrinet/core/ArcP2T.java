@@ -1,8 +1,5 @@
 package org.example.petrinet.core;
 
-import lombok.Getter;
-
-@Getter
 public class ArcP2T extends Arc {
 
     public ArcP2T(String name, Place place, Transition transition, int weight) {

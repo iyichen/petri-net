@@ -31,11 +31,13 @@ public class Transition {
     }
 
     public void fire() {
-        for (Arc arc : incoming) {
-            arc.fire();
-        }
-        for (Arc arc : outgoing) {
-            arc.fire();
+        if (fireable()) {
+            for (Arc arc : incoming) {
+                arc.fire();
+            }
+            for (Arc arc : outgoing) {
+                arc.fire();
+            }
         }
     }
 

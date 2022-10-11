@@ -63,14 +63,14 @@ public class PetriNetTest {
         Assert.check(transitions.size() == 1);
         Assert.check(transitions.get(0) == t1);
 
-        transitions.forEach(Transition::fire);
+        transitions.get(0).fire();
         System.out.println(petriNet);
 
         transitions = petriNet.fireableTransition();
         Assert.check(transitions.size() == 1);
         Assert.check(transitions.get(0) == t1);
 
-        transitions.forEach(Transition::fire);
+        transitions.get(0).fire();
         System.out.println(petriNet);
 
         transitions = petriNet.fireableTransition();
